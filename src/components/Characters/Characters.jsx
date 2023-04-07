@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import CharacterCard from '../CharacterCard/CharacterCard'
+import styles from './Characters.module.css'
 
 const Characters = () => {
   const [data, setData] = useState([])
@@ -16,7 +18,7 @@ const Characters = () => {
   if (!data.length) return
 
   return (
-    <>{data.map((character, index) => <h1 key={index}>{character.name}</h1>)}</>
+    <section className={styles.container}>{data.map((character) => <CharacterCard key={`${character.name}-card`} character={character}/>)}</section>
   )
 }
 
