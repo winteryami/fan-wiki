@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import CharacterCard from '../CharacterCard/CharacterCard'
+import CharacterCard from '../../CharacterCard/CharacterCard'
 import styles from './Characters.module.css'
 
 const Characters = () => {

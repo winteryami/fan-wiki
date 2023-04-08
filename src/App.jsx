@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './App.module.css'
-import Characters from './components/Characters/Characters'
+import { Outlet } from 'react-router-dom'
 
 function App () {
   return (
@@ -8,7 +8,7 @@ function App () {
       <header className={styles.title}>
         <h1>Rick & Morty Wiki</h1>
       </header>
-      <Characters/>
+      <Outlet/>
     </main>
   )
 }
