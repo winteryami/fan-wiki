@@ -5,7 +5,7 @@ import styles from './CharacterCard.module.css'
 const CharacterCard = ({ character }) => {
   return (
     <article className={styles.container}>
-      <img src={character.image}/>
+      <img alt={character.name} src={character.image}/>
       <h3>{character.name}</h3>
     </article>
   )
